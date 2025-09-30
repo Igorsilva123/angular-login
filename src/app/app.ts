@@ -5,7 +5,7 @@ import { Formulario } from "./componentes/formulario/formulario";
 
 @Component({
   selector: 'app-root',
-  imports: [Formulario],
+  imports: [Formulario, Cabecalho],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })

@@ -1,6 +1,11 @@
+<h1 [class.minhaCor]="alterarCor">{{title}}</h1>
+<p [style.color]="estiloCor">seila</p>
+<!-- <input [value]="valorInput"/> -->
 
-    <label>Email: </label>
-    <input type="text" name="email" placeholder="email">
-    <label>Password: </label>
-    <input type="text" name="password" placeholder="password">
-
+<input [(ngModel)]="valorInput"/>
+<button (click)="atualizarTitulo()">Atualizar</button>
+@if(tipoUsuario === 'feliz'){
+ <p>ele e feliz</p>
+}@else{
+ <p>ele e triste</p>
+}
